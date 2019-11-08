@@ -7,9 +7,39 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+<!--Pantalla 1: usuario ingresa nombre de usuario y contraseña. -->
+      <div id="userName">
+        <h1>Mensajes protegidos...</h1>
+        <h3> colectivos seguros</h3>
+        <h5>Usuario</h5>
+        <input type="text" id="collectiveName">
+        <input type="button" name="save" id="wrotenName" onclick="showEncryptionBlock()" value="Siguiente">
+      </div>
+      <div id="encryptionBlock" class="hide">
+        <h2 id="greeting">
+          Bienvenido/a, integrante del colectivo 2.
+        </h2>
+        <p> Elige tu cifrado </p>
+        <input type="number" min="1" max="50" id="encryptionNumber">
+        <br>
+         <br>
+        <textarea placeholder="Escribe aquí tu mensaje." id="encryptionText" onchange="changeToUppercase(this)" name="write-your-message" rows="15" cols="80"></textarea>
+
+
+        <div>
+          <button type="button" name="encrypt-button" onclick="encryptText()" >Cifrar texto</button>
+          <button type="button" name="descrypt-button" onclick="decryptText()">Descifrar texto</button>
+        </div>
+
+        <textarea placeholder="Aquí aparece tu mensaje cifrado." id="encodedText" name="modified-message" onchange="changeToUppercase(this)" rows="15" cols="80"></textarea>
+        <div>
+          <button type="button" name="newMessage" onclick="reset()" >Escribir nuevo mensaje</button>
+          <button type="button" name="send-message">Enviar texto</button>
+        </div>
+      </div>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+
   </body>
 </html>

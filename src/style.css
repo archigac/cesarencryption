@@ -1,0 +1,25 @@
+.hide {
+  display: none;
+}
+
+body{
+  background: #2F4F4F;
+  color: #B8860D;
+}
+
+*{
+  margin: 1;
+  padding: 1;
+}
+
+h1, h3{
+  color: #20B2AA;
+}
+
+h1{
+  font-size: 100px;
+}
+
+h3{
+  font-size: 60px;
+}
