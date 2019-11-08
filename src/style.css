@@ -5,6 +5,7 @@
 body{
   background: #2F4F4F;
   color: #B8860D;
+  text-align: center;
 }
 
 *{
@@ -13,7 +14,7 @@ body{
 }
 
 h1, h3{
-  color: #20B2AA;
+  color: #40E0DO
 }
 
 h1{
@@ -22,4 +23,17 @@ h1{
 
 h3{
   font-size: 60px;
+}
+
+h5{
+  font-size: 30px;
+}
+
+.row{
+  margin-top: 30px;
+}
+
+.message2{
+  font-size: 30px;
+  font-style: normal;
 }
