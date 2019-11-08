@@ -1,10 +1,10 @@
 //Esta función convierte minúsculas a mayúsculas cuando se presiona el botón de encripar
-function changeToUppercase(field) {
+function changeToUppercase(field) { // eslint-disable-line no-unused-vars
   field.value = field.value.toUpperCase();
 }
 
 //Esta función muestra el nombre del usuario cuando pasa la sección de encriptado, y esconde la sección de ingresar usuario.
-function showEncryptionBlock() {
+function showEncryptionBlock() { // eslint-disable-line no-unused-vars
   let sayGreeting, collectiveName;
    collectiveName = document.getElementById("collectiveName").value;
    sayGreeting = document.getElementById("greeting");
@@ -14,13 +14,12 @@ function showEncryptionBlock() {
  }
 
 //Esta función muestra el mensaje encriptado
-function encryptText() {
+function encryptText() { // eslint-disable-line no-unused-vars
   let number = encryptionNumberValidation();
   let text = encryptionTextValidation();
   if (number && text) {
-   let encodedMessage = cipher.encode(number, text)
+   let encodedMessage = cipher.encode(number, text);
     document.getElementById('encodedText').value = encodedMessage;
-   //debugger
   } else {
    return false;
   }
@@ -58,14 +57,12 @@ function decryptionTextValidation() {
   }
 }
 
-function decryptText() {
+function decryptText() { // eslint-disable-line no-unused-vars
   let number = encryptionNumberValidation();
   let text = decryptionTextValidation();
-  //debugger
   if (number && text) {
-   let decodedMessage = cipher.decode(number, text)
+   let decodedMessage = cipher.decode(number, text);
    document.getElementById('encryptionText').value = decodedMessage;
-   //debugger
   } else {
    return false;
   }
@@ -85,7 +82,7 @@ function decryptText() {
  // }
 
 //Esta función borra el texto en las cajas superior e inferior.
-function reset() {
+function reset() { // eslint-disable-line no-unused-vars
   document.getElementById("encryptionText").value = "";
   document.getElementById("encodedText").value = "";
 }

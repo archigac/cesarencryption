@@ -7,7 +7,7 @@ window.cipher = {
       if (asciiChar > 64 && asciiChar < 91) {
         newAsciiChar = ( asciiChar - 65 + offset) % 26 + 65;
       } else {
-        newAsciiChar = asciiChar
+        newAsciiChar = asciiChar;
       }
       encodedString = encodedString + String.fromCharCode(newAsciiChar);
     }
@@ -20,7 +20,7 @@ window.cipher = {
       if (asciiChar > 64 && asciiChar < 91) {
         newAsciiChar = ( asciiChar - 65 - offset) % 26 + 65;
       } else {
-        newAsciiChar = asciiChar
+        newAsciiChar = asciiChar;
       }
       decodedString = decodedString + String.fromCharCode(newAsciiChar);
     }
